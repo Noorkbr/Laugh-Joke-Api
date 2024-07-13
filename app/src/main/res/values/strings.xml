@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Laugh Joke</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lets_go">Lets Go</string>
+    <string name="genarate_new_jokes">Genarate New Jokes</string>
+    <string name="chosse_joke_category">Chosse Joke Category</string>
+    <string name="genarate_jokes">Genarate Jokes</string>
 </resources>
