@@ -1,4 +1,4 @@
-package com.example.fitglow.base
+package com.example.laughjoke.base
 
 import android.app.ProgressDialog
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.example.jokerjokes.db.local
+package com.example.laughjoke.db.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -6,7 +6,8 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.jokerjokes.db.JokesData
+import com.example.laughjoke.db.JokesData
+
 
 @Dao
 interface JokesDao {

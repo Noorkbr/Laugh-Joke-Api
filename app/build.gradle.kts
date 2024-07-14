@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt")
+
 }
 
 android {
@@ -44,17 +46,16 @@ android {
 }
 
 dependencies {
-    implementation (libs.retrofit)
-    implementation (libs.converter.gson)
-    implementation (libs.converter.gson.vlatestversion)
-    implementation (libs.androidx.room.runtime)
-    implementation (libs.androidx.navigation.fragment.ktx)
-    implementation (libs.androidx.navigation.ui.ktx)
-    implementation (libs.androidx.lifecycle.extensions)
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+
+
+
+
+
     implementation (libs.lottie)
     implementation (libs.ssp.android)
     implementation (libs.sdp.android)
+
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -65,4 +66,28 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+//retrofit
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.converter.gson.vlatestversion)
+
+    //navigation
+
+    implementation (libs.androidx.navigation.fragment.ktx)
+    implementation (libs.androidx.navigation.ui.ktx)
+
+    //viemodel
+
+    implementation(libs.lifecycle.viewmodel)
+    implementation(libs.lifecycle.livedata)
+
+    implementation(libs.room.runtime)
+    kapt(libs.room.compiler.kapt)
+    implementation(libs.room.ktx)
+
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+
+
 }

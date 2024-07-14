@@ -1,4 +1,4 @@
-package com.example.jokerjokes.service
+package com.example.laughjoke.service
 
 import retrofit2.Response
 import retrofit2.Retrofit

@@ -74,9 +74,9 @@
                 <ImageView
                     android:onClick="@{()-> viewModel.saveJokes()}"
                     android:id="@+id/btn_favorite"
-                    android:layout_width="@dimen/_10ssp"
-                    android:layout_height="@dimen/_10ssp"
-                    android:src="@drawable/love_1489_svgrepo_com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_border_24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_margin="16dp"
@@ -112,13 +112,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/genarate_jokes"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
 
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginHorizontal="32dp"
-
             android:layout_marginBottom="@dimen/_32sdp" />
-
 
 
 

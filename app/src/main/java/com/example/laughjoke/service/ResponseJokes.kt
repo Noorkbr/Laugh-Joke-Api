@@ -1,4 +1,4 @@
-package com.example.jokerjokes.service
+package com.example.laughjoke.service
 
 
 import com.google.gson.annotations.SerializedName

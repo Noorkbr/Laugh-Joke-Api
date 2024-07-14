@@ -1,10 +1,10 @@
-package com.example.jokerjokes.db.local
+package com.example.laughjoke.db.local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.jokerjokes.db.JokesData
+import com.example.laughjoke.db.JokesData
 
 @Database(entities = [JokesData::class], version = 1, exportSchema = false)
 abstract class JokesDatabase: RoomDatabase() {

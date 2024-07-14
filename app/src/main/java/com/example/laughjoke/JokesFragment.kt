@@ -19,14 +19,12 @@ class JokesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(layoutInflater, R.layout.fragment_home, container, false)
+        binding = DataBindingUtil.inflate(layoutInflater, R.layout.fragment_jokes,container,false)
         binding.viewModel = viewModel
         binding.lifecycleOwner = this.viewLifecycleOwner
 
-        val categoriesList =
-            arrayOf("Any", "Programming", "Miscellaneous", "Dark", "Pun", "Spooky", "Christmas")
-        val adapter =
-            ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, categoriesList)
+        val categoriesList = arrayOf("Any", "Programming", "Miscellaneous", "Dark", "Pun", "Spooky", "Christmas")
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, categoriesList)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerCategory.adapter = adapter
 
@@ -44,13 +42,13 @@ class JokesFragment : Fragment() {
     }
 
     private fun allObserver() {
-        viewModel._responseJokesData.observe(viewLifecycleOwner) { data ->
+        viewModel._responseJokesData.observe(viewLifecycleOwner){data->
             data?.let {
                 binding.tvGenerateJokes.visibility = View.GONE
-                if (data.joke == null) {
+                if (data.joke == null){
                     viewModel.jokeSetup.postValue(data.setup ?: "")
                     viewModel.delivery.postValue(data.delivery ?: "")
-                } else {
+                }else{
                     viewModel.jokeSetup.postValue("")
                     viewModel.delivery.postValue(data.joke)
                 }

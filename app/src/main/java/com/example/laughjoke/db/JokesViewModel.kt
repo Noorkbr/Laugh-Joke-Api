@@ -4,13 +4,12 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.jokerjokes.db.DefaultJokesRepository
-import com.example.jokerjokes.db.JokesData
-import com.example.jokerjokes.service.JokesClient
-import com.example.jokerjokes.service.ResponseJokes
+import com.example.laughjoke.service.JokesClient
+import com.example.laughjoke.service.ResponseJokes
 import kotlinx.coroutines.launch
 
-class JokesViewModel (application: Application) : AndroidViewModel(application) {
+
+class JokesViewModel(application: Application) : AndroidViewModel(application) {
     private val responseJokesData = MutableLiveData<ResponseJokes>()
     val _responseJokesData get() = responseJokesData
 
@@ -62,8 +61,8 @@ class JokesViewModel (application: Application) : AndroidViewModel(application) 
     }
 
     private fun saveJokes(jokesData: JokesData){
-        viewModelScope.launch{
+       /* viewModelScope.launch{
             repository.saveJokes(jokesData)
-        }
+        }*/
     }
 }

@@ -1,8 +1,8 @@
-package com.example.jokerjokes.db.local
+package com.example.laughjoke.db.local
 
 import androidx.lifecycle.LiveData
-import com.example.jokerjokes.db.JokesData
-import com.example.jokerjokes.db.JokesDataSource
+import com.example.laughjoke.db.JokesData
+import com.example.laughjoke.db.JokesDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

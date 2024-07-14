@@ -1,4 +1,4 @@
-package com.example.jokerjokes.db
+package com.example.laughjoke.db
 
 import androidx.lifecycle.LiveData
 
