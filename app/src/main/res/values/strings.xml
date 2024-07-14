@@ -6,4 +6,6 @@
     <string name="genarate_new_jokes">Genarate New Jokes</string>
     <string name="chosse_joke_category">Chosse Joke Category</string>
     <string name="genarate_jokes">Genarate Jokes</string>
+    <string name="jokes">Jokes</string>
+    <string name="favourites">Favourites</string>
 </resources>

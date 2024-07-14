@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/jokesFragment"
+        android:icon="@drawable/jester_joker_svgrepo_com"
+        android:title="@string/jokes"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/favouritesFragment"
+        android:icon="@drawable/love_1489_svgrepo_com"
+        android:title="@string/favourites"
+        android:enabled="true"
+        />
+</menu>
