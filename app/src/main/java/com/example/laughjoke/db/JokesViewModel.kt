@@ -61,8 +61,8 @@ class JokesViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private fun saveJokes(jokesData: JokesData){
-       /* viewModelScope.launch{
+      viewModelScope.launch{
             repository.saveJokes(jokesData)
-        }*/
+        }
     }
 }

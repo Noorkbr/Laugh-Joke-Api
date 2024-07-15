@@ -64,6 +64,10 @@ class JokesFragment : Fragment() {
             val selectedCategory = binding.spinnerCategory.selectedItem.toString()
             viewModel.getRandomJokes(selectedCategory)
         }
+        binding.btnFavorite.setOnClickListener {
+            viewModel.saveJokes()
+            binding.btnFavorite.setImageResource(R.drawable.ic_favorite_24)
+        }
     }
 
     private fun allObserver() {
@@ -78,6 +82,7 @@ class JokesFragment : Fragment() {
                     viewModel.delivery.postValue(data.joke)
                 }
                 viewModel.categories.postValue(data.category ?: "")
+                binding.btnFavorite.setImageResource(R.drawable.ic_favorite_border_24)
             }
         }
     }
